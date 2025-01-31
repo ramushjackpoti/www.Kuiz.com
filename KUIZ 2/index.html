@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuiz me 10 Pyetje</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Kuiz me 10 Pyetje</h1>
+    <div id="quiz">
+      <p id="question"></p>
+      <ul id="answers">
+        <li><button onclick="kontrolloPergjigjen(0)">Përgjigjja 1</button></li>
+        <li><button onclick="kontrolloPergjigjen(1)">Përgjigjja 2</button></li>
+        <li><button onclick="kontrolloPergjigjen(2)">Përgjigjja 3</button></li>
+        <li><button onclick="kontrolloPergjigjen(3)">Përgjigjja 4</button></li>
+      </ul>
+      <button id="next" onclick="pyetjaTjeter()">Pyetja Tjetër</button>
+    </div>
+    <div id="result" class="hidden">
+      <h2>Rezultati juaj: <span id="score"></span>/10</h2>
+      <button onclick="rifilloKuizin()">Rifillo Kuizin</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
